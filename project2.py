@@ -1,0 +1,11 @@
+from tkinter import *
+window = Tk()
+window.title("Stopsign")
+window.geometry('300x300')
+b1 = Button(window,text = "Stop",bg = "red",command = window.destroy)
+b2 = Button(window,text = "Go",bg = "green",command = window.destroy)
+b3 = Button(window,text = "wait",bg = "orange",activebackground = "yellow",command = window.destroy)
+b1.pack(side = 'top')
+b2.pack(side = 'bottom')
+b3.pack(side = 'left')
+window.mainloop()
